@@ -1,6 +1,7 @@
 #!/usr/bin/env nextflow
 
 process sayHello {
+  container "biocontainers/fastqc:v0.11.9_cv8"
   input: 
     val x
   output:
